@@ -1,0 +1,58 @@
+header{
+    background: #FFCC8F;
+}
+nav{
+    background:#FFDAAF ;
+}
+section{
+    background: #A760FF;
+    grid-column:1/4;
+}
+aside{
+    background: #CA82FF;
+    grid-column:4/5;
+}
+footer{
+    background: #CA82FF;
+    text-align: center;
+}
+main{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.menu{
+    padding: 0px 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.menu li a{
+background-color: #A760FF;
+color: rgb(255, 255, 255);
+text-decoration: double;
+padding: 20px 80px;
+display: block;
+}
+.menu li a:hover{
+    background-color: aqua;
+}
+.menu li ul {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    min-width: 140px;   
+}
+.menu li:hover > ul{
+display: block;
+}
+.menu li ul li {
+    position: relative;
+}
+.menu li ul li ul {
+right: 140px;
+}
